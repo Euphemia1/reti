@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETI | Rising East Training Institute - Bridging the Skills Gap</title>
+    <meta name="description"
+        content="Rising East Training Institute (RETI) is a TEVETA-accredited trade school in Lusaka, Zambia, offering practical skills in engineering, construction, and more.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="navbar">
+        <nav class="container">
+            <div class="logo">
+                <span class="logo-text">RETI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Programmes</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cta-wrapper">
+                <a href="#contact" class="btn btn-primary">Enroll Now</a>
+            </div>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="animate-fade-up">Empowering Zambia's Workforce</h1>
+                <p class="animate-fade-up" style="animation-delay: 0.2s;">Rising East Training Institute (RETI) provides
+                    high-quality, hands-on training to bridge the skills gap in construction, engineering, and digital
+                    sectors.</p>
+                <div class="hero-btns animate-fade-up" style="animation-delay: 0.4s;">
+                    <a href="#courses" class="btn btn-gold">Explore Courses</a>
+                    <a href="#about" class="btn btn-outline-white">Our Mission</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Mission Section -->
+        <section id="about" class="about section-padding">
+            <div class="container grid-2">
+                <div class="about-text">
+                    <span class="badge">About Us</span>
+                    <h2>Bridging the Industrial Skills Gap</h2>
+                    <p>Located in Lusaka, Rising East Training Institute (RETI) is a TEVETA-accredited trade school
+                        committed to equipping individuals with practical, job-ready skills. We focus on enhancing
+                        employability and career advancement for artisans, professionals, and youth.</p>
+                    <div class="mission-grid">
+                        <div class="mission-item">
+                            <h3>Our Mission</h3>
+                            <p>To reduce the skills gap by offering high-quality, hands-on training tailored to Zambia's
+                                growing economy.</p>
+                        </div>
+                        <div class="mission-item">
+                            <h3>Our Vision</h3>
+                            <p>To empower competent contributors to the job market through accessible and
+                                industry-relevant vocational excellence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <!-- Stats or image will go here -->
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <p>Practical Focused</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">TEVETA</span>
+                        <p>Accredited</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="courses section-padding light-bg">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="badge">Programmes</span>
+                    <h2>World-Class Vocational Training</h2>
+                    <p>Choose from our wide range of affordable and intensive courses designed for immediate impact.</p>
+                </div>
+
+                <div class="course-categories">
+                    <button class="filter-btn active" data-filter="level3">Level III (3 Months)</button>
+                    <button class="filter-btn" data-filter="skills">Skills Award (2 Months)</button>
+                    <button class="filter-btn" data-filter="short">Short Courses</button>
+                </div>
+
+                <div class="courses-grid" id="courseContainer">
+                    <!-- Level III Programmes -->
+                    <div class="course-card" data-category="level3">
+                        <div class="course-icon">⚡</div>
+                        <h3>Electrical Engineering</h3>
+                        <p>Level III Certificate. Minimum Grade 9. Duration: 3 months.</p>
+                    </div>
+                    <div class="course-card" data-category="level3">
+                        <div class="course-icon">🏗️</div>
+                        <h3>Bricklaying & Masonry</h3>
+                        <p>Level III Certificate. Hands-on construction training.</p>
+                    </div>
+                    <div class="course-card" data-category="level3">
+                        <div class="course-icon">👨‍🏭</div>
+                        <h3>Metal Fabrication & Welding</h3>
+                        <p>Level III Certificate. Industrial welding techniques.</p>
+                    </div>
+                    <div class="course-card" data-category="level3">
+                        <div class="course-icon">🍳</div>
+                        <h3>Food Production</h3>
+                        <p>Level III Certificate. Professional culinary skills.</p>
+                    </div>
+                    <div class="course-card" data-category="level3">
+                        <div class="course-icon">🌱</div>
+                        <h3>General Agriculture</h3>
+                        <p>Level III Certificate. Modern farming and production.</p>
+                    </div>
+                    <div class="course-card" data-category="level3">
+                        <div class="course-icon">🧵</div>
+                        <h3>Fashion Design</h3>
+                        <p>Level III Certificate. Textile technology and design.</p>
+                    </div>
+
+                    <!-- Skills Award Programmes -->
+                    <div class="course-card hide" data-category="skills">
+                        <div class="course-icon">🚜</div>
+                        <h3>Heavy Equipment Ops</h3>
+                        <p>JCB, Grader, and Excavator Operations. Max 2 months.</p>
+                    </div>
+                    <div class="course-card hide" data-category="skills">
+                        <div class="course-icon">❄️</div>
+                        <h3>HVAC & Refrigeration</h3>
+                        <p>Service and repair of AC systems. Skills award.</p>
+                    </div>
+                    <div class="course-card hide" data-category="skills">
+                        <div class="course-icon">💻</div>
+                        <h3>Computer Studies</h3>
+                        <p>Digital literacy and office productivity tools.</p>
+                    </div>
+                    <div class="course-card hide" data-category="skills">
+                        <div class="course-icon">🎨</div>
+                        <h3>Tiling & Painting</h3>
+                        <p>Professional finishing for construction projects.</p>
+                    </div>
+
+                    <!-- Short Courses -->
+                    <div class="course-card hide" data-category="short">
+                        <div class="course-icon">🛰️</div>
+                        <h3>Digital Mastery</h3>
+                        <p>Social Media Marketing, Coding, and System Security.</p>
+                    </div>
+                    <div class="course-card hide" data-category="short">
+                        <div class="course-icon">🍰</div>
+                        <h3>Pastry & Baking</h3>
+                        <p>Professional wedding cakes and event cooking.</p>
+                    </div>
+                    <div class="course-card hide" data-category="short">
+                        <div class="course-icon">🛠️</div>
+                        <h3>Electronics Repair</h3>
+                        <p>Service & Repair of TVs, Computers, and Photocopiers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Section -->
+        <section class="leadership section-padding">
+            <div class="container grid-2 align-center">
+                <div class="leader-image-wrapper">
+                    <img src="courses-grid.jpg" alt="RETI Training" class="leader-img">
+                </div>
+                <div class="leader-text">
+                    <span class="badge">Leadership</span>
+                    <h2>A Vision for Vocational Excellence</h2>
+                    <blockquote>"RETI is more than just a place of learning — it is a hub for empowerment,
+                        skill-building, and national development."</blockquote>
+                    <p><strong>Mr. Liver Tembo</strong><br>Managing Director, RETI</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section id="partners" class="partners section-padding light-bg">
+            <div class="container text-center">
+                <h2>Our Strategic Partners</h2>
+                <p>Collaborating with industry leaders to ensure high standards of training.</p>
+                <div class="partner-logos">
+                    <div class="partner-logo">TEVETA</div>
+                    <div class="partner-logo">Copperbelt University</div>
+                    <div class="partner-logo">New Life Christian Centre</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container grid-2">
+                <div class="contact-info">
+                    <span class="badge">Contact</span>
+                    <h2>Get In Touch</h2>
+                    <p>Ready to start your journey? Contact us today or visit our campus in Lusaka.</p>
+                    <ul class="contact-list">
+                        <li><strong>📍 Location:</strong> Libala Road, Kalundu, Lusaka, Zambia</li>
+                        <li><strong>📞 Phone:</strong> <a href="tel:+260978646489">+260 978 646 489</a></li>
+                        <li><strong>✉️ Email:</strong> <a href="mailto:academic@reti.ac.zm">academic@reti.ac.zm</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://facebook.com/RisingEastTrainingInstitute" target="_blank"
+                            class="social-icon">Visit our Facebook Page →</a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <div class="contact-card">
+                        <h3>Quick Enroll</h3>
+                        <p>Fill in your details and we will call you back.</p>
+                        <form id="enrollForm">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <select required>
+                                <option value="" disabled selected>Select Course</option>
+                                <option>Electrical Engineering</option>
+                                <option>Bricklaying & Masonry</option>
+                                <option>Metal Fabrication & Welding</option>
+                                <option>Other Programmes</option>
+                            </select>
+                            <button type="submit" class="btn btn-gold btn-block">Submit Application</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <span class="logo-text">RETI</span>
+                <p>Rising East Training Institute is more than just a place of learning — it is a hub for empowerment
+                    and skill-building in Zambia.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Programmes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Libala Road, Kalundu, Lusaka<br>Zambia</p>
+                <p>+260 978 646 489</p>
+            </div>
+        </div>
+        <div class="container footer-bottom text-center">
+            <p>&copy; 2025 Rising East Training Institute (RETI). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
