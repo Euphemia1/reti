@@ -11,6 +11,8 @@
 </head>
 
 <body>
+    <!-- Bubble Background -->
+    <div id="bubble-container"></div>
 
     <!-- Header / Navigation -->
     <header id="navbar">
@@ -21,7 +23,8 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#courses">Programmes</a></li>
+                <li><a href="#cdf">CDF Programmes</a></li>
+                <li><a href="#courses">Other Courses</a></li>
                 <li><a href="#partners">Partners</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -46,7 +49,7 @@
                     high-quality, hands-on training to bridge the skills gap in construction, engineering, and digital
                     sectors.</p>
                 <div class="hero-btns animate-fade-up" style="animation-delay: 0.4s;">
-                    <a href="#courses" class="btn btn-gold">Explore Courses</a>
+                    <a href="#cdf" class="btn btn-gold">CDF Programmes</a>
                     <a href="#about" class="btn btn-outline-white">Our Mission</a>
                 </div>
             </div>
@@ -88,13 +91,71 @@
             </div>
         </section>
 
-        <!-- Courses Section -->
+        <!-- CDF Programmes Section (New) -->
+        <section id="cdf" class="courses section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="badge">Feature Programmes</span>
+                    <h2>CDF Sponsored Programmes</h2>
+                    <p>Empower yourself with our heavily sponsored Constituency Development Fund (CDF) courses.</p>
+                </div>
+
+                <div class="courses-grid">
+                    <!-- CDF: Heavy Duty -->
+                    <div class="course-card">
+                        <img src="heavy-duty.png" alt="Heavy Duty Equipment">
+                        <div class="course-icon">🚜</div>
+                        <h3>Heavy Duty Equipment</h3>
+                        <p>Master the operation of excavators, graders, and heavy machinery. Job-ready skills.</p>
+                    </div>
+                    <!-- CDF: Fashion -->
+                    <div class="course-card">
+                        <img src="fashion.png" alt="Fashion Designing">
+                        <div class="course-icon">🧵</div>
+                        <h3>Fashion Designing</h3>
+                        <p>Create cutting-edge fashion and learn textile technology in our creative workshops.</p>
+                    </div>
+                    <!-- CDF: Bricklaying -->
+                    <div class="course-card">
+                        <img src="bricklaying.png" alt="Bricklaying">
+                        <div class="course-icon">🏗️</div>
+                        <h3>Bricklaying & Masonry</h3>
+                        <p>Build the future with professional bricklaying and construction techniques.</p>
+                    </div>
+                    <!-- CDF: Electrical -->
+                    <div class="course-card">
+                        <img src="electrical.png" alt="Electrical Engineering">
+                        <div class="course-icon">⚡</div>
+                        <h3>Electrical Engineering</h3>
+                        <p>Become a certified electrician with hands-on training in wiring and circuits.</p>
+                    </div>
+                    <!-- CDF: Food Production -->
+                    <div class="course-card">
+                        <img src="courses-grid.jpg" alt="Food Production" style="filter: hue-rotate(45deg);">
+                        <!-- Placeholder -->
+                        <div class="course-icon">🍳</div>
+                        <h3>Food Production</h3>
+                        <p>Culinary arts and professional food production for the hospitality industry.</p>
+                    </div>
+                    <!-- CDF: Feed Formulation -->
+                    <div class="course-card">
+                        <img src="courses-grid.jpg" alt="Feed Formulation" style="filter: hue-rotate(90deg);">
+                        <!-- Placeholder -->
+                        <div class="course-icon">�</div>
+                        <h3>Feed Formulation</h3>
+                        <p>Scientific animal feed formulation to boost agricultural productivity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Courses Section -->
         <section id="courses" class="courses section-padding light-bg">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="badge">Programmes</span>
-                    <h2>World-Class Vocational Training</h2>
-                    <p>Choose from our wide range of affordable and intensive courses designed for immediate impact.</p>
+                    <span class="badge">More Programmes</span>
+                    <h2>Other Vocational Training</h2>
+                    <p>Explore our wide range of certificate and award courses.</p>
                 </div>
 
                 <div class="course-categories">
@@ -104,44 +165,19 @@
                 </div>
 
                 <div class="courses-grid" id="courseContainer">
-                    <!-- Level III Programmes -->
+                    <!-- Level III Programmes (Filtered minus the ones moved to CDF if duplicates, but keeping general lists is fine) -->
                     <div class="course-card" data-category="level3">
-                        <div class="course-icon">⚡</div>
-                        <h3>Electrical Engineering</h3>
-                        <p>Level III Certificate. Minimum Grade 9. Duration: 3 months.</p>
-                    </div>
-                    <div class="course-card" data-category="level3">
-                        <div class="course-icon">🏗️</div>
-                        <h3>Bricklaying & Masonry</h3>
-                        <p>Level III Certificate. Hands-on construction training.</p>
-                    </div>
-                    <div class="course-card" data-category="level3">
-                        <div class="course-icon">👨‍🏭</div>
+                        <div class="course-icon">�‍🏭</div>
                         <h3>Metal Fabrication & Welding</h3>
                         <p>Level III Certificate. Industrial welding techniques.</p>
-                    </div>
-                    <div class="course-card" data-category="level3">
-                        <div class="course-icon">🍳</div>
-                        <h3>Food Production</h3>
-                        <p>Level III Certificate. Professional culinary skills.</p>
                     </div>
                     <div class="course-card" data-category="level3">
                         <div class="course-icon">🌱</div>
                         <h3>General Agriculture</h3>
                         <p>Level III Certificate. Modern farming and production.</p>
                     </div>
-                    <div class="course-card" data-category="level3">
-                        <div class="course-icon">🧵</div>
-                        <h3>Fashion Design</h3>
-                        <p>Level III Certificate. Textile technology and design.</p>
-                    </div>
 
                     <!-- Skills Award Programmes -->
-                    <div class="course-card hide" data-category="skills">
-                        <div class="course-icon">🚜</div>
-                        <h3>Heavy Equipment Ops</h3>
-                        <p>JCB, Grader, and Excavator Operations. Max 2 months.</p>
-                    </div>
                     <div class="course-card hide" data-category="skills">
                         <div class="course-icon">❄️</div>
                         <h3>HVAC & Refrigeration</h3>

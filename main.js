@@ -69,4 +69,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     document.querySelectorAll('.animate-fade-up').forEach(el => observer.observe(el));
+
+    // Bubble Generation
+    function createBubbles() {
+        const container = document.getElementById('bubble-container');
+        if (!container) return;
+
+        const bubbleCount = 15; // Number of bubbles
+
+        for (let i = 0; i < bubbleCount; i++) {
+            const bubble = document.createElement('div');
+            bubble.classList.add('bubble');
+
+            // Randomize properties
+            const size = Math.random() * 60 + 20; // 20px - 80px
+            const left = Math.random() * 100; // 0% - 100%
+            const duration = Math.random() * 10 + 10; // 10s - 20s
+            const delay = Math.random() * 10; // 0s - 10s
+
+            bubble.style.width = `${size}px`;
+            bubble.style.height = `${size}px`;
+            bubble.style.left = `${left}%`;
+            bubble.style.animationDuration = `${duration}s`;
+            bubble.style.animationDelay = `-${delay}s`; // Negative delay to start mid-animation
+
+            container.appendChild(bubble);
+        }
+    }
+
+    createBubbles();
 });
