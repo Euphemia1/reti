@@ -1,0 +1,51 @@
+{
+  "name": "Course",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Course title"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "level_3_programmes",
+        "skills_award",
+        "short_courses",
+        "management_soft_skills",
+        "hr_training",
+        "construction",
+        "heavy_equipment",
+        "communication",
+        "logistics"
+      ],
+      "description": "Course category"
+    },
+    "duration": {
+      "type": "string",
+      "description": "Course duration"
+    },
+    "description": {
+      "type": "string",
+      "description": "Course description"
+    },
+    "requirements": {
+      "type": "string",
+      "description": "Entry requirements"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Course image URL"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Is this a featured course"
+    }
+  },
+  "required": [
+    "title",
+    "category",
+    "duration"
+  ]
+}
