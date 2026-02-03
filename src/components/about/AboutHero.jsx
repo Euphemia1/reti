@@ -7,7 +7,7 @@ export default function AboutHero() {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ 
-          backgroundImage: "url(https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80)"
+          backgroundImage: "url(/src/photos/FB_IMG_1753195623686.jpg)"
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-[#1e3a5f]/95 via-[#1e3a5f]/80 to-[#1e3a5f]/60" />
