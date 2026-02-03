@@ -10,7 +10,8 @@ import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 
 const { Pages, Layout, mainPage } = pagesConfig;
 const mainPageKey = mainPage ?? Object.keys(Pages)[0];
-const MainPage = mainPageKey ? Pages[mainPageKey] : <></>;
+console.log('App initialization - version: 1.0.1', { mainPageKey, availablePages: Object.keys(Pages) });
+const MainPage = (mainPageKey && Pages[mainPageKey]) ? Pages[mainPageKey] : () => <div className="p-8 text-center">Page "{mainPageKey}" not found configuration</div>;
 
 const LayoutWrapper = ({ children, currentPageName }) => Layout ?
   <Layout currentPageName={currentPageName}>{children}</Layout>
@@ -65,6 +66,7 @@ const AuthenticatedApp = () => {
 
 
 function App() {
+  console.log('App component rendering');
 
   return (
     <AuthProvider>
