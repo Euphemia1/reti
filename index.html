@@ -1,14 +1,301 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://base44.com/logo_v2.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="/manifest.json" />
-    <title>Base44 APP</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETI | Rising East Training Institute</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="35" height="35" viewBox="0 0 35 35">
+                            <circle cx="17.5" cy="17.5" r="16" fill="#1e3a8a"/>
+                            <path d="M17.5 7L20.5 14L27.5 14.5L22 19L24 26L17.5 22L11 26L13 19L7.5 14.5L14.5 14L17.5 7Z" fill="#fbbf24"/>
+                        </svg>
+                    </div>
+                    <span>RETI</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <span>🎓 Professional Skills Training</span>
+                        </div>
+                        <h1>Build Your Career with <span class="highlight">Industry-Ready Skills</span></h1>
+                        <p>Empowering Zambia's workforce with practical, job-focused training that meets real industry demands.</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary">Explore Courses</button>
+                            <button class="btn btn-outline">Download Brochure</button>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-card">
+                            <div class="card-icon">
+                                <svg width="60" height="60" viewBox="0 0 60 60">
+                                    <circle cx="30" cy="30" r="28" fill="#1e3a8a"/>
+                                    <path d="M30 12L35 22L45 23L37 30L39 40L30 35L21 40L23 30L15 23L25 22L30 12Z" fill="#fbbf24"/>
+                                </svg>
+                            </div>
+                            <h3>Excellence in Training</h3>
+                            <p>World-class education for tomorrow's professionals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Vision & Mission</h2>
+                    <p>Committed to reducing the skills gap in Zambia's job market</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <svg width="50" height="50" viewBox="0 0 50 50">
+                                <circle cx="25" cy="25" r="23" fill="#1e3a8a"/>
+                                <path d="M25 10L29 18L37 19L31 25L33 33L25 28L17 33L19 25L13 19L21 18L25 10Z" fill="#fbbf24"/>
+                            </svg>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To reduce the skills gap in the job market by providing short courses in scarce skills that are work-ready and aligned with industry needs.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <svg width="50" height="50" viewBox="0 0 50 50">
+                                <circle cx="25" cy="25" r="23" fill="#1e3a8a"/>
+                                <path d="M25 10L29 18L37 19L31 25L33 33L25 28L17 33L19 25L13 19L21 18L25 10Z" fill="#fbbf24"/>
+                            </svg>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To provide the highest standard of training using innovation and technological approaches in line with world's best practices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="courses">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Skills Training Courses</h2>
+                    <p>Comprehensive programs designed for immediate employment</p>
+                </div>
+
+                <div class="courses-grid">
+                    <!-- Formal Sector -->
+                    <div class="course-section">
+                        <div class="section-title-card">
+                            <h3>Formal Sector</h3>
+                        </div>
+                        
+                        <div class="course-category">
+                            <h4>Corporate Courses</h4>
+                            <ul class="course-list">
+                                <li>Call Center Training</li>
+                                <li>Customer Care Excellence</li>
+                                <li>Performance Management</li>
+                                <li>Effective Communication Skills</li>
+                                <li>Green Finance</li>
+                                <li>Time Management</li>
+                                <li>Administrative Support</li>
+                                <li>Environmental, Social & Governance</li>
+                                <li>Employee Motivation</li>
+                                <li>Leadership & Supervisory Skills</li>
+                            </ul>
+                        </div>
+
+                        <div class="course-category">
+                            <h4>Agriculture Courses</h4>
+                            <ul class="course-list">
+                                <li>Animal Feed Production</li>
+                                <li>Animal Health Management</li>
+                                <li>Bio Safety in Livestock</li>
+                                <li>Farm Mechanization</li>
+                                <li>Occupational Health & Safety</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Informal Sector -->
+                    <div class="course-section">
+                        <div class="section-title-card">
+                            <h3>Informal Sector</h3>
+                        </div>
+                        
+                        <div class="course-category">
+                            <h4>Construction Courses</h4>
+                            <ul class="course-list">
+                                <li>Building Construction Technology</li>
+                                <li>Road Construction</li>
+                                <li>Construction Law</li>
+                                <li>Contract Administration</li>
+                                <li>Estimating & Tendering</li>
+                            </ul>
+                        </div>
+
+                        <div class="course-category">
+                            <h4>Entrepreneurship Courses</h4>
+                            <ul class="course-list">
+                                <li>Financial Literacy</li>
+                                <li>Market Research</li>
+                                <li>Co-operative Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get Started Today</h2>
+                        <p>Ready to transform your career? Contact us to learn more about our programs and enrollment process.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#1e3a8a">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>East Campus, Plot A150<br>Off Munali Road, Lusaka</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#1e3a8a">
+                                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>0211-296071<br>0954-999900<br>0964-082013</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#1e3a8a">
+                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>academic@reti.edu.zm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <select>
+                                    <option value="">Select Course Category</option>
+                                    <option value="corporate">Corporate Courses</option>
+                                    <option value="agriculture">Agriculture Courses</option>
+                                    <option value="construction">Construction Courses</option>
+                                    <option value="entrepreneurship">Entrepreneurship Courses</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Tell us about your interests" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <svg width="35" height="35" viewBox="0 0 35 35">
+                            <circle cx="17.5" cy="17.5" r="16" fill="#1e3a8a"/>
+                            <path d="M17.5 7L20.5 14L27.5 14.5L22 19L24 26L17.5 22L11 26L13 19L7.5 14.5L14.5 14L17.5 7Z" fill="#fbbf24"/>
+                        </svg>
+                    </div>
+                    <h3>RETI</h3>
+                    <p>Rising East Training Institute</p>
+                    <p>Empowering Zambia's workforce with industry-ready skills</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>East Campus, Plot A150<br>Off Munali Road, Lusaka</p>
+                    <p>0211-296071</p>
+                    <p>academic@reti.edu.zm</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rising East Training Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
 </html>
