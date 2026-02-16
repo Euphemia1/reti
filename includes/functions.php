@@ -37,19 +37,6 @@ function cleanInput($data) {
     return $data;
 }
 
-// Check if admin is logged in
-function isAdminLoggedIn() {
-    return isset($_SESSION['admin_id']) && !empty($_SESSION['admin_id']);
-}
-
-// Redirect if not admin
-function requireAdminLogin() {
-    if (!isAdminLoggedIn()) {
-        header("Location: login.php");
-        exit();
-    }
-}
-
 // Format currency
 function formatCurrency($amount) {
     return 'ZMW ' . number_format($amount, 2);
@@ -122,8 +109,6 @@ function getPageTitle() {
             return $title . ' - News';
         case 'contact':
             return $title . ' - Contact';
-        case 'admin':
-            return $title . ' - Admin Panel';
         default:
             return $title;
     }

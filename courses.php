@@ -51,7 +51,6 @@ $category_titles = [
                 <li><a href="courses.php" class="active">Courses</a></li>
                 <li><a href="news.php">News</a></li>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a href="admin/login.php" class="cta-button">Admin</a></li>
             </ul>
             
             <div class="menu-toggle">

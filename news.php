@@ -56,7 +56,6 @@ $total_pages = ceil($total_news / $per_page);
                 <li><a href="courses.php">Courses</a></li>
                 <li><a href="news.php" class="active">News</a></li>
                 <li><a href="contact.php">Contact</a></li>
-                <li><a href="admin/login.php" class="cta-button">Admin</a></li>
             </ul>
             
             <div class="menu-toggle">
