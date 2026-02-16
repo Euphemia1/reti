@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Rising East Institute</title>
+    <meta name="description" content="Explore our comprehensive range of professional courses at Rising East Institute.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/modern.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/images/logo.svg" alt="Rising East Institute" class="logo">
+                <span class="brand-text">Rising East Institute</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="courses.html" class="nav-link active">Courses</a>
+                <a href="projects.html" class="nav-link">Our Work</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Courses Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Our Courses</h1>
+                <p class="page-subtitle">Transform your career with our industry-recognized programs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Categories -->
+    <section class="course-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All Courses</button>
+                <button class="category-tab" data-category="level3">Level III</button>
+                <button class="category-tab" data-category="skills">Skills Awards</button>
+                <button class="category-tab" data-category="short">Short Courses</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="courses-section">
+        <div class="container">
+            <div class="courses-grid" id="coursesGrid">
+                <!-- Level III Programs -->
+                <div class="course-card" data-category="level3" data-aos="fade-up">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Electrical Engineering">
+                        <div class="course-level">Level III</div>
+                        <div class="course-duration">3 Months</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-header">
+                            <h3 class="course-title">Electrical Engineering</h3>
+                            <div class="course-price">K 5,000</div>
+                        </div>
+                        <p class="course-description">Comprehensive training in electrical systems, installation, and maintenance with hands-on practical experience. Learn industrial wiring, motor control, and electrical safety.</p>
+                        <div class="course-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> TEVETA Accredited</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Practical Training</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Job Placement</span>
+                        </div>
+                        <div class="course-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 3 Months</span>
+                            <span class="certificate"><i class="fas fa-award"></i> Certificate</span>
+                            <span class="requirement"><i class="fas fa-graduation-cap"></i> Grade 9</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="enrollCourse('Electrical Engineering')">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="level3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Construction Management">
+                        <div class="course-level">Level III</div>
+                        <div class="course-duration">3 Months</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-header">
+                            <h3 class="course-title">Construction Management</h3>
+                            <div class="course-price">K 4,500</div>
+                        </div>
+                        <p class="course-description">Learn project planning, site management, construction technology, and industry best practices for successful career in construction.</p>
+                        <div class="course-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> TEVETA Accredited</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Site Visits</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Software Training</span>
+                        </div>
+                        <div class="course-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 3 Months</span>
+                            <span class="certificate"><i class="fas fa-award"></i> Certificate</span>
+                            <span class="requirement"><i class="fas fa-graduation-cap"></i> Grade 9</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="enrollCourse('Construction Management')">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Skills Awards -->
+                <div class="course-card" data-category="skills" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Heavy Equipment">
+                        <div class="course-level">Skills Award</div>
+                        <div class="course-duration">6 Weeks</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-header">
+                            <h3 class="course-title">Heavy Equipment Operation</h3>
+                            <div class="course-price">K 3,500</div>
+                        </div>
+                        <p class="course-description">Professional training in excavator, grader, and construction equipment operation with safety certification.</p>
+                        <div class="course-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> Hands-on Training</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Safety Certified</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Equipment Provided</span>
+                        </div>
+                        <div class="course-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 6 Weeks</span>
+                            <span class="certificate"><i class="fas fa-award"></i> Certificate</span>
+                            <span class="requirement"><i class="fas fa-user"></i> No Prerequisites</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="enrollCourse('Heavy Equipment Operation')">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="skills" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="IT Computing">
+                        <div class="course-level">Skills Award</div>
+                        <div class="course-duration">8 Weeks</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-header">
+                            <h3 class="course-title">IT & Computing</h3>
+                            <div class="course-price">K 2,500</div>
+                        </div>
+                        <p class="course-description">Modern computer skills, programming, digital literacy, and software applications for today's workplace.</p>
+                        <div class="course-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> Practical Projects</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Industry Software</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Certification Prep</span>
+                        </div>
+                        <div class="course-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 8 Weeks</span>
+                            <span class="certificate"><i class="fas fa-award"></i> Certificate</span>
+                            <span class="requirement"><i class="fas fa-user"></i> Basic Computer Skills</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="enrollCourse('IT & Computing')">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Short Courses -->
+                <div class="course-card" data-category="short" data-aos="fade-up" data-aos-delay="400">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Business Management">
+                        <div class="course-level">Short Course</div>
+                        <div class="course-duration">2 Weeks</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-header">
+                            <h3 class="course-title">Business Management</h3>
+                            <div class="course-price">K 1,500</div>
+                        </div>
+                        <p class="course-description">Essential business skills including leadership, strategy, marketing, and organizational management.</p>
+                        <div class="course-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> Weekend Classes</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Certificate</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Networking</span>
+                        </div>
+                        <div class="course-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 2 Weeks</span>
+                            <span class="certificate"><i class="fas fa-award"></i> Certificate</span>
+                            <span class="requirement"><i class="fas fa-user"></i> Open to All</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="enrollCourse('Business Management')">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="short" data-aos="fade-up" data-aos-delay="500">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Hospitality">
+                        <div class="course-level">Short Course</div>
+                        <div class="course-duration">1 Week</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-header">
+                            <h3 class="course-title">Hospitality Management</h3>
+                            <div class="course-price">K 1,000</div>
+                        </div>
+                        <p class="course-description">Customer service excellence, hotel operations, tourism industry skills, and service management.</p>
+                        <div class="course-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> Practical Training</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Industry Links</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Job Ready</span>
+                        </div>
+                        <div class="course-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 1 Week</span>
+                            <span class="certificate"><i class="fas fa-award"></i> Certificate</span>
+                            <span class="requirement"><i class="fas fa-user"></i> No Experience Needed</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="enrollCourse('Hospitality Management')">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Journey?</h2>
+                <p>Join thousands of graduates who have transformed their careers with our professional training programs.</p>
+                <div class="cta-actions">
+                    <button class="btn btn-primary" onclick="window.location.href='contact.html'">
+                        <span>Get Started Today</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-outline" onclick="window.location.href='contact.html'">
+                        <span>Download Brochure</span>
+                        <i class="fas fa-download"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="assets/images/logo-white.svg" alt="Rising East Institute" class="footer-logo">
+                        <p class="footer-description">Empowering students with professional skills and industry-relevant education for successful careers.</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="projects.html">Our Work</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Programs</h4>
+                        <ul>
+                            <li><a href="#">Level III Programs</a></li>
+                            <li><a href="#">Skills Awards</a></li>
+                            <li><a href="#">Short Courses</a></li>
+                            <li><a href="#">Workshops</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Connect</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; <span class="current-year"></span> Rising East Institute. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/modern.js"></script>
+    <script>
+        // Course filtering
+        const categoryTabs = document.querySelectorAll('.category-tab');
+        const courseCards = document.querySelectorAll('.course-card');
+
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                categoryTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                const category = tab.getAttribute('data-category');
+                
+                // Filter courses
+                courseCards.forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Enrollment function
+        function enrollCourse(courseName) {
+            showNotification(`Enrollment initiated for ${courseName}. Our team will contact you soon!`, 'success');
+            setTimeout(() => {
+                window.location.href = 'contact.html?course=' + encodeURIComponent(courseName);
+            }, 2000);
+        }
+
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
