@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETI - Rising East Training Institute</title>
+    <meta name="description" content="Rising East Training Institute - TEVETA-accredited vocational training in Zambia. Get your education today!">
+    
+    <!-- Fonts - Montserrat for TypeScript-like modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/modern.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="brand-text">RETI</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Get your Education today!</h1>
+                <p class="hero-subtitle">RISING EAST TRAINING INSTITUTE - TEVETA-accredited vocational and professional training in Lusaka, Zambia</p>
+            </div>
+            <div class="hero-actions">
+                <button class="btn btn-primary" onclick="scrollToSection('courses')">
+                    <span>Explore Courses</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                    <span>Get Started</span>
+                    <i class="fas fa-phone"></i>
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5000">0</div>
+                    <div class="stat-label">Graduates</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">Success Rate %</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">OUR MOTO</h2>
+                <p class="section-subtitle" style="font-size: 1.5rem; font-weight: 700; color: var(--primary-blue);">STRIVING TO REDUCE THE SKILLS GAP IN THE CONSTRUCTION INDUSTRY</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Rising East Training Institute (RETI) is a TEVETA-accredited vocational and professional training center based in Lusaka, Zambia. Established to respond to the growing demand for skilled professionals, RETI is committed to bridging the national skills gap in construction, engineering, and technical fields.</p>
+                    <p>Our programs are designed to combine theoretical knowledge with practical, hands-on training, ensuring that graduates are not only academically prepared but also job-ready for today's competitive industries.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Expert Instructors</h3>
+                            <p>Learn from industry professionals with years of real-world experience</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <h3>TEVETA Accredited</h3>
+                            <p>Nationally recognized certifications approved by TEVETA</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-briefcase"></i>
+                            <h3>Job Placement</h3>
+                            <p>Career support and connections to top employers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="assets/images/20250610_165923.jpg" alt="RETI Training Facility">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Modern Learning Environment</h3>
+                                <p>State-of-the-art facilities designed for optimal learning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">RISING EAST TRAINING INSTITUTE 2025/2026 Skills Training Programmes On Offer</h2>
+                <p class="section-subtitle">Choose from our comprehensive range of professional training programs</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card" data-aos="fade-up">
+                    <div class="course-image">
+                        <img src="assets/images/FB_IMG_1753195579557.jpg" alt="Electrical Engineering Training">
+                        <div class="course-level">Level III</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Electrical Engineering</h3>
+                        <p class="course-description">Level III Certificate in Electrical Engineering - Comprehensive 3-month program covering electrical systems, installation, and maintenance.</p>
+                        <div class="course-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 3 Months</span>
+                            <span class="certificate"><i class="fas fa-award"></i> Certificate</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="window.location.href='courses.html'">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-image">
+                        <img src="assets/images/20250617_100130.jpg" alt="Construction Training">
+                        <div class="course-level">Skills Award</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Bricklaying & Masonry</h3>
+                        <p class="course-description">Level III Certificate in Bricklaying & Masonry - 3-month comprehensive training in construction techniques and building technology.</p>
+                        <div class="course-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 6 Weeks</span>
+                            <span class="certificate"><i class="fas fa-award"></i> Certificate</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="window.location.href='courses.html'">Enroll Now</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-image">
+                        <img src="assets/images/20250617_113107.jpg" alt="Welding Training">
+                        <div class="course-level">Short Course</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Metal Fabrication & Welding</h3>
+                        <p class="course-description">Level III Certificate in Metal Fabrication & Welding - 3-month program in welding techniques and metalwork.</p>
+                        <div class="course-meta">
+                            <span class="duration"><i class="fas fa-clock"></i> 2 Weeks</span>
+                            <span class="certificate"><i class="fas fa-award"></i> Certificate</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="window.location.href='courses.html'">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-action">
+                <button class="btn btn-primary" onclick="window.location.href='courses.html'">
+                    <span>View All Courses</span>
+                    <i class="fas fa-th-large"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section class="downloads">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Download Your Application Form and Course List</h2>
+            </div>
+            <div class="downloads-grid">
+                <a href="downloads/application-form.pdf" class="download-card" download>
+                    <div class="download-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="download-content">
+                        <h3>Application Form</h3>
+                        <p>Download your 2025/2026 application form</p>
+                        <span class="download-btn">Download PDF <i class="fas fa-download"></i></span>
+                    </div>
+                </a>
+                <a href="downloads/course-list.pdf" class="download-card" download>
+                    <div class="download-icon">
+                        <i class="fas fa-list-alt"></i>
+                    </div>
+                    <div class="download-content">
+                        <h3>Course List</h3>
+                        <p>Download our complete 2025/2026 course catalogue</p>
+                        <span class="download-btn">Download PDF <i class="fas fa-download"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Student Success Stories</h2>
+                <p class="section-subtitle">Hear from Our Graduates</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Rising East Institute transformed my career. The practical training and industry connections helped me secure a job immediately after graduation."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/20250715_130414.jpg" alt="RETI Graduate">
+                            <div class="author-info">
+                                <h4>James Mwansa</h4>
+                                <p>Electrical Engineering Graduate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The instructors are amazing and curriculum is industry-relevant. I felt confident and prepared for my new career."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/FB_IMG_1753195623686.jpg" alt="RETI Graduate">
+                            <div class="author-info">
+                                <h4>Sarah Chanda</h4>
+                                <p>Business Management Graduate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Excellent facilities and hands-on training. The job placement support was invaluable in finding my first position."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/20250610_165925.jpg" alt="RETI Graduate">
+                            <div class="author-info">
+                                <h4>Michael Banda</h4>
+                                <p>Construction Management Graduate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-btn prev" onclick="changeTestimonial(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="testimonial-btn next" onclick="changeTestimonial(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Start Your Journey Today</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm" class="form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Interested Course</label>
+                            <select id="course" name="course">
+                                <option value="">Select a course</option>
+                                <option value="electrical">Electrical Engineering</option>
+                                <option value="construction">Construction Management</option>
+                                <option value="business">Business Management</option>
+                                <option value="it">IT & Computing</option>
+                                <option value="hospitality">Hospitality Management</option>
+                                <option value="heavy-equipment">Heavy Equipment Operation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your goals and interests..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Visit Us</h3>
+                            <p>EAST CAMPUS, PLOT A150<br>OFF MUNALI ROAD<br>P.O BOX 33381, LUSAKA, ZAMBIA</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>0211-296071<br>0954-999900<br>0964-082013</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>academic@reti.edu.zm<br>info@reti.edu.zm</p>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>Interactive Map</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-graduation-cap"></i>
+                        <p class="footer-description">RETI | Building Skills that Open Doors to Employment and Enterprise.</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Programs</h4>
+                        <ul>
+                            <li><a href="#">Level III Programs</a></li>
+                            <li><a href="#">Skills Awards</a></li>
+                            <li><a href="#">Short Courses</a></li>
+                            <li><a href="#">Workshops</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Connect with us</h4>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">Follow us on social media</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Rising East Training Institute. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/modern.js"></script>
+</body>
+</html>
