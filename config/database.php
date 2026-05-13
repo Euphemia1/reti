@@ -5,10 +5,10 @@
  */
 
 class Database {
-    private $host = 'localhost';
-    private $db_name = 'risingeast';
-    private $username = 'root';
-    private $password = '';
+    private $host = '127.0.0.1';
+    private $db_name = 'u754414236_reti';
+    private $username = 'u754414236_reti';   // your Hostinger DB username
+    private $password = 'Reti@2026';   // the password you set on Hostinger
     private $conn;
 
     public function getConnection() {
